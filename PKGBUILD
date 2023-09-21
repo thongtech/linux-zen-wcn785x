@@ -1,7 +1,7 @@
 # Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 
 pkgbase=linux-zen
-pkgver=6.5.4.zen1
+pkgver=6.5.4.zen2
 pkgrel=1
 pkgdesc='Linux ZEN'
 url='https://github.com/zen-kernel/zen-kernel'
@@ -40,7 +40,7 @@ validpgpkeys=(
 )
 b2sums=('99df210ee8f244de9059c9699648f7aad8e520030ce14e61971ba95365635e698e7c66074aa3f5c57bd75f1058e1c1dbaecea66d0b381202f239b3a04a396371'
         'SKIP'
-        '54fc1c76b6dd3aeab04f61347df8127829cfc22570f2a18032fe8ffd440f6e227ec574bd1d61062a01d31201d4fcc338b30fd5f883cc3c1d4158f476bab2030b'
+        'aa6ffa211fd8927dfd00daf9e20bd8502e535145a391c04b2273dc932194069d363e0215ceeb9379ebc23f34710b6d3db0bcce8566d114da75ca8752d6b128e5'
         'SKIP'
         'b599c8fffdeb20284579dad59d5fc53c506b6d189ac268b91ba2e3f17726002e7b784b5902214b28f300fe602c3d1e8d663cf6af5f59e5d0d195918e5e433f53')
 
