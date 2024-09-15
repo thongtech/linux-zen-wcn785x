@@ -15,6 +15,9 @@ makedepends=(
   pahole
   perl
   python
+  rust
+  rust-bindgen
+  rust-src
   tar
   xz
 
@@ -46,12 +49,12 @@ sha256sums=('55d2c6c025ebc27810c748d66325dd5bc601e8d32f8581d9e77673529bdacb2e'
             'SKIP'
             '6561d4c940e6613a914d2c84446c5003cc672708dd802023ae771474f8a6fa39'
             'SKIP'
-            '6d73e0645135d3d3924aa87de47bc9e1f978649f3f334a0a3054ac34e856e9ec')
+            '5a4e0c3ac42cd7b247f3ce3e7ec5bbe00d01b5d0fbdbbe4ade0ae036e9cfe7b2')
 b2sums=('e7750c0878d71a56a0ce52d4c4c912199dad5bf5e2e8f872585a6494afbb37cbd852e612a6858936d2dc9b7776a3933818f540db408d57e90d18ea5249bba7ab'
         'SKIP'
         '5fece384c127834214130626c0d5663fadf4460ce58f956d8918e5dd64a54e389817471b4a8776078f5f46c97ec52901b3622aa95fbae38f2197024b26ef8b5d'
         'SKIP'
-        '3cbaa5829d05f586222aa1f0f67667d14a43d4dfca4dfe9dffc000974e8bf1ebd57b624943c93db05b77a1a67dd81c672dde4a24c20fa9ec3a9fcc67035a1344')
+        '5430cca57a6ca6e90456eae592d6f95e3cf74077791855e9d7a4432c694c32469a09880f400461d7e7a26acec6c65759e642099c6b2afee5dcd6ae388b0bef3d')
 
 export KBUILD_BUILD_HOST=archlinux
 export KBUILD_BUILD_USER=$pkgbase
@@ -143,6 +146,7 @@ _package-headers() {
   install -Dt "$builddir/kernel" -m644 kernel/Makefile
   install -Dt "$builddir/arch/x86" -m644 arch/x86/Makefile
   cp -t "$builddir" -a scripts
+  ln -srt "$builddir" "$builddir/scripts/gdb/vmlinux-gdb.py"
 
   # required when STACK_VALIDATION is enabled
   install -Dt "$builddir/tools/objtool" tools/objtool/objtool
