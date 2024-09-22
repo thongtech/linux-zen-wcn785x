@@ -15,9 +15,6 @@ makedepends=(
   pahole
   perl
   python
-  rust
-  rust-bindgen
-  rust-src
   tar
   xz
 
@@ -49,12 +46,12 @@ sha256sums=('55d2c6c025ebc27810c748d66325dd5bc601e8d32f8581d9e77673529bdacb2e'
             'SKIP'
             '6561d4c940e6613a914d2c84446c5003cc672708dd802023ae771474f8a6fa39'
             'SKIP'
-            '5a4e0c3ac42cd7b247f3ce3e7ec5bbe00d01b5d0fbdbbe4ade0ae036e9cfe7b2')
+            '8c0f8140e60816a84f938f8e319170f6e7d9d1cd358a0b912f2e26f75acccff1')
 b2sums=('e7750c0878d71a56a0ce52d4c4c912199dad5bf5e2e8f872585a6494afbb37cbd852e612a6858936d2dc9b7776a3933818f540db408d57e90d18ea5249bba7ab'
         'SKIP'
         '5fece384c127834214130626c0d5663fadf4460ce58f956d8918e5dd64a54e389817471b4a8776078f5f46c97ec52901b3622aa95fbae38f2197024b26ef8b5d'
         'SKIP'
-        '5430cca57a6ca6e90456eae592d6f95e3cf74077791855e9d7a4432c694c32469a09880f400461d7e7a26acec6c65759e642099c6b2afee5dcd6ae388b0bef3d')
+        '31c96ab7cfdcca1179d9e928e7ff25e5d3fd1cddd067d1783d523a7926889a8deaf0137133f47ede8154e936e093b860fda555687bf0942c32e66b8105a3c505')
 
 export KBUILD_BUILD_HOST=archlinux
 export KBUILD_BUILD_USER=$pkgbase
