@@ -46,12 +46,12 @@ sha256sums=('aee8a844fe152420bece70ffae8525b9b23089aa4da31fa32f30e1859bf93c3d'
             'SKIP'
             '383707b0a8bd25e0d74afee1006b8c943d95286de53aaba874a4a72a829c3ad8'
             'SKIP'
-            'fbbf1d480cc02789911a555038c5394c29010d4a28148f07a486e401a0af57d4')
+            'b2444369d743b7e2af763d5dfdb0efe8d97dc9e5a6bda47d2ca1c48dc4baa6bd')
 b2sums=('2d3b56bf4fa3a3d20c5379856c9e2d2ce7220bc05320859e123053d08138dd380f9aa7a9d11df3a8fbe07583a28bafffc0ffd3ed9cf28ebf09d6af7e97a0ed5f'
         'SKIP'
         'b240a2b17baa2b05340c1a3e4a01d31cf53ee133740997f54d86b3653de75a67931991adbf8995adbc287259080ccd4cf60bf609622f45ba14b0a6370ac61b3e'
         'SKIP'
-        '84707eada88f6df03a0da4b1fe6c0b786fefadd70b38e13a80e45e90f9f793223982fab0ded14c07bef62c2c4f8d113075d5a25f5fd2bda66369c10a9c163709')
+        'c4df0cb3945e798b8c9345cb09d579ce7fff1dffa93efd89d167d38e3aa6d43caaa0b897bfeb9ed7b8e7e7936210c9c474b5e0cca4b3e1f3e576608238730a1c')
 
 export KBUILD_BUILD_HOST=archlinux
 export KBUILD_BUILD_USER=$pkgbase
