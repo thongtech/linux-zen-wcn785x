@@ -6,6 +6,18 @@ It is based on the official [Arch Linux Zen kernel](https://gitlab.archlinux.org
 
 The patch addresses the issue described in [bluez/bluez#750](https://github.com/bluez/bluez/issues/750) (Audio Connection Failures with Qualcomm QCNCM865) by adding the USB ID `0489:e10a` to the Linux kernel's `btusb` driver, allowing proper recognition of Qualcomm FastConnect 7800 Bluetooth devices.
 
+## Checking Your Device ID
+
+This patch is designed for devices with the USB ID `0489:e10a`. If your Qualcomm FastConnect 7800 has a different product ID, you'll need to modify the patch.
+
+To check your device ID:
+```bash
+lsusb | grep '0489:'
+# Example output: Bus 003 Device 003: ID 0489:e10a Foxconn / Hon Hai
+```
+
+If your device shows a different ID (e.g., `0489:e10d`), edit the `btusb-wcn785x.patch` file before building and replace `0x0489, 0xe10a` with your specific values.
+
 ## Installation (Arch)
 
 ```bash
